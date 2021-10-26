@@ -37,8 +37,6 @@ gulp.task('clean:css', () => {
     // .pipe(clean())
 });
 
-
-
 // Configure css min
 var cssMinifyLocation = ['css/**/*.css', '!css/**/*.min.css'];
 gulp.task('css:min', () => {
@@ -50,9 +48,6 @@ gulp.task('css:min', () => {
     ))
     .pipe(gulp.dest('css'))
 });
-
-
-
 
 // Run build task
 gulp.task('build', (callback) => {
