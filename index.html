@@ -11,10 +11,72 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro:wght@300;600&display=swap" rel="stylesheet">
 
+    <!-- Load blue print css for demo -->
+    <link href="https://unpkg.com/blueprint-css@3.1.1/dist/blueprint.min.css" rel="stylesheet" />
+    
     <link rel="stylesheet" href="css/reset.min.css">
     <link rel="stylesheet" href="css/main.min.css">
 </head>
 <body>
-    
+    <div bp="container">
+        <div bp="grid">
+            <div bp="4@md offset-4@md">
+                <h1>User register</h1>
+            </div>
+        </div>
+        <div bp="grid">
+            <div bp="6@md offset-4@md">
+                <div class="input-group">
+                    <div class="input-elem">
+                        <input type="text" id="name" class="input-elem__text" autocomplete="off" placeholder=" "  required/>
+                        <label for="name" class="input-elem__label">Your Name<sup>*</sup></label>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-elem">
+                        <input type="text" id="surname" class="input-elem__text" autocomplete="off" placeholder=" "  required/>
+                        <label for="surname" class="input-elem__label">Your Surname<sup>*</sup></label>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-elem">
+                        <input type="text" id="email" class="input-elem__text" autocomplete="off" placeholder=" "  required/>
+                        <label for="email" class="input-elem__label">email<sup>*</sup></label>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-elem">
+                        <input type="password" id="password" class="input-elem__text" autocomplete="off" placeholder=" "  required/>
+                        <label for="password" class="input-elem__label">Password<sup>*</sup></label>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-elem">
+                        <input type="password" id="password-confirm" class="input-elem__text" autocomplete="off" placeholder=" "  required/>
+                        <label for="password-confirm" class="input-elem__label">Confirm password<sup>*</sup></label>
+                    </div>
+                </div>
+                <div class="toggle-label">
+                    <input type="checkbox" name="terms" id="terms" checked />
+                    <div class="toggle-switch"></div>
+                    <label for="terms" class="toggle-label"><p class="label-text">I accept general terms of use</p></label>
+                </div>
+                <div class="toggle-label">
+                    <input type="checkbox" name="privacy" id="privacy" />
+                    <div class="toggle-switch"></div>
+                    <label for="privacy" class="toggle-label"><p class="label-text">Privacy</p></label>
+                </div>
+
+                <div bp="grid">
+                    <div bp="5@md">
+                        <button class="btn btn--ghost">CANCEL</button>
+                    </div>
+                    <div bp="7@md">
+                        <a href="user-register.html" class="btn">NEXT STEP</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

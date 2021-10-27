@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alea test zadatak</title>
+
+    <!-- Fonts loaded here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro:wght@300;600&display=swap" rel="stylesheet">
+
+    <!-- Load blue print css for demo -->
+    <link href="https://unpkg.com/blueprint-css@3.1.1/dist/blueprint.min.css" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+    <div bp="container">
+        <div bp="grid">
+            <div bp="4@md offset-3@md">
+                <h1>User register</h1>
+            </div>
+        </div>
+        <div bp="grid">
+            <div bp="5@md offset-2@md">
+                <div class="input-group">
+                    <div class="select">
+                        <select name="country" id="country">
+                            <option value="USA">United States</option>
+                            <option value="val 2">Item 2</option>
+                            <option value="val 3">Item 3</option>
+                        </select>
+                        <label for="country">Country<sup>*</sup></label>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="select">
+                        <select name="city" id="city">
+                            <option value="ny">New York</option>
+                            <option value="val 2">Item 2</option>
+                            <option value="val 3">Item 3</option>
+                        </select>
+                        <label for="city">City<sup>*</sup></label>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-elem">
+                        <input type="text" id="zip" class="input-elem__text" autocomplete="off" placeholder=" "  required/>
+                        <label for="zip" class="input-elem__label">Zip Number<sup>*</sup></label>
+                    </div>
+                </div>
+                <div bp="grid">
+                    <div bp="7@md">
+                        <div class="input-group">
+                            <div class="input-elem">
+                                <input type="text" id="address" class="input-elem__text" autocomplete="off" placeholder=" "  required/>
+                                <label for="address" class="input-elem__label">Address</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div bp="5@md">
+                        <div class="input-group">
+                            <div class="input-elem">
+                                <input type="text" id="street-no" class="input-elem__text" autocomplete="off" placeholder=" "  required/>
+                                <label for="street-no" class="input-elem__label">Number</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-elem">
+                        <input type="text" id="id-card" class="input-elem__text" autocomplete="off" placeholder=" "  required/>
+                        <label for="id-card" class="input-elem__label">Personal ID card</label>
+                    </div>
+                </div>
+            </div>
+            <div bp="5@md">
+                <div class="input-group">
+                    <div class="input-elem">
+                        <input type="text" id="date" class="input-elem__text" autocomplete="off" placeholder=" "  required/>
+                        <label for="date" class="input-elem__label">Date of Birth</label>
+                    </div>
+                </div>
+                <div class="input-group radio-group">
+                    <input type="radio" id="male" name="sex" />
+                    <label for="male" class="radio-label">Male</label>
+            
+                    <input type="radio" id="female" name="sex" />
+                    <label for="female" class="radio-label">Female</label>
+            
+                    <input type="radio" id="other" name="sex" />
+                    <label for="other" class="radio-label">Other</label>
+                </div>
+                <div class="input-group">
+                    <div class="input-elem">
+                        <input type="text" id="phone" class="input-elem__text" autocomplete="off" placeholder=" "  required/>
+                        <label for="phone" class="input-elem__label">Phone number</label>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-elem">
+                        <input type="text" id="account-no" class="input-elem__text" autocomplete="off" placeholder=" "  required/>
+                        <label for="account-no" class="input-elem__label">Account number</label>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-elem">
+                        <input type="text" id="account-no-1" class="input-elem__text" autocomplete="off" placeholder=" "  required/>
+                        <label for="account-no-1" class="input-elem__label">Account number</label>
+                    </div>
+                </div>
+                <div>
+                    <button class="btn">REGISTER</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

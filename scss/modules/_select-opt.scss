@@ -1,0 +1,48 @@
+select {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    padding: 0 1em 0 0;
+    margin: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+    outline: none;
+    grid-area: select;
+}
+
+.select {
+    @include position(relative);
+    background-color: $white;
+    border: 1px solid #858C94;
+    border-radius: $border-radius;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-areas: "select";
+    align-items: center;
+    padding: px2rem(11px) px2rem(16px);
+    font-size: 16px;
+    line-height: 1.5;
+    width: 100%;
+    &::after {
+        content: "";
+        width: 18px;
+        height: 10px;
+        justify-self: end;
+        background-color: #858C94;
+        grid-area: select;
+        clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+    }
+    &  label {
+        @include position(absolute, $top: -14px, $left: 12px);
+        color: #858C94;
+        background-color: $white;
+        cursor: text;
+        font-size: 12px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 400;
+        padding: px2rem(4px);
+    }
+}
